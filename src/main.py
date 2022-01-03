@@ -1,5 +1,3 @@
-
-
 from checkSubnet import checkSubnet
 from printResult import printResult
 
