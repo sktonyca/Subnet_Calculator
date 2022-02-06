@@ -9,7 +9,7 @@ def checkSubnet():
             myip = ipaddress.IPv4Network(get_Input)
             break
         except ipaddress.AddressValueError: # If ip address is invalid
-            print("The ip address is invalid")
+            print("The IP address is invalid")
         except ipaddress.NetmaskValueError: # If subnet mask is invalid
             print("The subnet mask is invalid")
         except ValueError: # If the input is invalid

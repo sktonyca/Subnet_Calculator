@@ -5,7 +5,9 @@ from printResult import printResult
 while True:
     user_Input = checkSubnet()
     printResult(user_Input[0], user_Input[1])
-    if (input("Do you want to continue? Y for yes, N for No\n").upper()== "N"):
-        break
-
-
+    while True:
+        # Ask if continue
+        if (input("Do you want to continue? Y for yes, N for No\n").upper()== "N"):
+            exit()
+        else:
+            print("Invalid Input")
